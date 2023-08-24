@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import { ArrowRightIcon } from 'react-native-heroicons/outline'
 
@@ -10,6 +10,14 @@ const FeaturedRow = ({ id, title, description }) => {
         <ArrowRightIcon color={'#00ccbb'}/>
       </View>
       <Text className='text-xs text-gray-500 px-4'>{description}</Text>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{paddingHorizontal: 15}}
+        className='pt-4'
+      >
+        {/* Restaurant Cards */}
+      </ScrollView>
     </View>
   )
 }
