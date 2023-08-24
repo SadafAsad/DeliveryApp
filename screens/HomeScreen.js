@@ -64,6 +64,16 @@ const HomeScreen = () => {
                 description='Paid placements from our partners'
                 featuredCategory='featured'
             />
+            <FeaturedRow 
+                title='Tasty Discounts' 
+                description="Everyone's been enjoying these juicy discounts"
+                featuredCategory='discounts'
+            />
+            <FeaturedRow 
+                title='Offers near you!' 
+                description='Why not support your local retaurant tonight!'
+                featuredCategory='offers'
+            />
         </ScrollView>
     </SafeAreaView>
     )
