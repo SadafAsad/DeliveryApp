@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'DeliveryApp',
+  title: 'FoodDeliveryApp',
 
-  projectId: 'pe03f4yl',
+  projectId: 'y9tpsn9r',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

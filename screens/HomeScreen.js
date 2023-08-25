@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { 
     UserIcon,
@@ -9,9 +9,12 @@ import {
 } from 'react-native-heroicons/outline'
 import Categories from '../components/Categories'
 import FeaturedRow from '../components/FeaturedRow'
+import client from '../sanity'
 
 const HomeScreen = () => {
     const navigation = useNavigation()
+
+    const [featuredCategories, setFeaturedCategories] = useState([])
 
     // as soon as the screen appears (mounts)
     useLayoutEffect(() => {
@@ -19,6 +22,17 @@ const HomeScreen = () => {
             headerShown: false,
         })
     }, [])
+
+    useEffect(() => {
+        client.fetch(`
+            *[_type == "featured"] {
+                ...,
+          }`).then(data => {
+            setFeaturedCategories(data)
+        })
+    }, [])
+
+    console.log("This is Featured: ", featuredCategories)
 
     return (
     <SafeAreaView className='bg-white pt-5'>
