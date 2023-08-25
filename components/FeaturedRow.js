@@ -24,8 +24,6 @@ const FeaturedRow = ({ id, title, description }) => {
     })
   }, [])
 
-  console.log('restaurants: ', restaurants)
-
   return (
     <View>
       <View className='mt-4 flex-row items-center justify-between px-4'>
@@ -40,54 +38,21 @@ const FeaturedRow = ({ id, title, description }) => {
         className='pt-4'
       >
         {/* Restaurant Cards */}
-        <RestaurantCards 
-            id={123}
-            imageUrl='https://links.papareact.com/gn7'
-            title='Yo! Sushi'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Main St'
-            short_description='This is a test description'
-            dishes={[]}
-            long={20}
-            lat={0}
+        {restaurants?.map(restaurant => (
+          <RestaurantCards 
+            key={restaurant._id}
+            id={restaurant._id}
+            imageUrl={restaurant.image}
+            title={restaurant.name}
+            rating={restaurant.rating}
+            genre={restaurant.type?.name}
+            address={restaurant.address}
+            short_description={restaurant.short_description}
+            dishes={restaurant.dishes}
+            long={restaurant.long}
+            lat={restaurant.lat}
         />
-        <RestaurantCards 
-            id={123}
-            imageUrl='https://links.papareact.com/gn7'
-            title='Yo! Sushi'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Main St'
-            short_description='This is a test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        />
-        <RestaurantCards 
-            id={123}
-            imageUrl='https://links.papareact.com/gn7'
-            title='Yo! Sushi'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Main St'
-            short_description='This is a test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        />
-        <RestaurantCards 
-            id={123}
-            imageUrl='https://links.papareact.com/gn7'
-            title='Yo! Sushi'
-            rating={4.5}
-            genre='Japanese'
-            address='123 Main St'
-            short_description='This is a test description'
-            dishes={[]}
-            long={20}
-            lat={0}
-        />
+        ))}
       </ScrollView>
     </View>
   )
