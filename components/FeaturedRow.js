@@ -1,9 +1,13 @@
 import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ArrowRightIcon } from 'react-native-heroicons/outline'
 import RestaurantCards from './RestaurantCards'
 
 const FeaturedRow = ({ id, title, description }) => {
+  useEffect(() => {
+
+  }, [])
+  
   return (
     <View>
       <View className='mt-4 flex-row items-center justify-between px-4'>
