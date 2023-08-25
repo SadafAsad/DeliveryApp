@@ -62,6 +62,12 @@ const RestaurantScreen = () => {
 
                 <Text className='text-gray-500 mt-2 pb-4'>{short_description}</Text>
             </View>
+
+            <TouchableOpacity className='flex-row items-center space-x-2 p-4 border-y border-gray-300'>
+                <QuestionMarkCircleIcon color={'gray'} size={20} opacity={0.6} />
+                <Text className='pl-2 flex-1 text-md font-bold'>Have a food allergy?</Text>
+                <ChevronRightIcon color={'#00ccbb'} size={20}/>
+            </TouchableOpacity>
         </View>
     </ScrollView>
     )
