@@ -9,7 +9,7 @@ export const basketSlice = createSlice({
   initialState,
   reducers: {
     addToBasket: (state, action) => {
-      state.items += [...state.items, action.payload]
+      state.items = [...state.items, action.payload]
     },
     removeFromBasket: (state, action) => {
       state.items -= 1
@@ -20,5 +20,6 @@ export const basketSlice = createSlice({
 export const { addToBasket, removeFromBasket } = basketSlice.actions
 
 export const selectBasketItems = (state) => state.basket.items
+export const selectBasketItemsWithId = (state, id) => state.basket.items.filter((item) => item.id === id)
 
 export default basketSlice.reducer
