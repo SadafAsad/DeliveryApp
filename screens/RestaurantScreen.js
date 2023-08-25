@@ -31,7 +31,7 @@ const RestaurantScreen = () => {
     return (
     <>
         <BasketIcon/>
-        
+
         <ScrollView>
             <View className='relative'>
                 <Image
@@ -75,7 +75,7 @@ const RestaurantScreen = () => {
                 </TouchableOpacity>
             </View>
 
-            <View>
+            <View className='pb-36'>
                 <Text className='px-4 pt-6 mb-3 font-bold text-xl'>Menu</Text>
 
                 {/* Dish rows */}
