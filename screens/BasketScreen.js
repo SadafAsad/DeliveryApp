@@ -31,7 +31,7 @@ const BasketScreen = () => {
                 <View className='p-5 border-b border-[#00ccbb] bg-white shadow-xs'>
                     <View>
                         <Text className='text-lg font-bold text-center'>Basket</Text>
-                        {/* <Text className='text-center text-gray-400'>{restaurant.title}</Text> */}
+                        <Text className='text-center text-gray-400'>{restaurant.title}</Text>
                     </View>
 
                     <TouchableOpacity
