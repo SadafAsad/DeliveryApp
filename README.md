@@ -2,10 +2,8 @@
 
 Experience a whole new way of getting your favorite food – where tech and taste come together like never before!
 
-![](https://github.com/SadafAsad/DeliveryApp/blob/main/assets/DeliveryAppDemo.gif)
-
 <p align="center">
-  <img src="assets/DeliveryAppDemo.gif" alt="animated" />
+  <img src="assets/DeliveryAppDemo.gif" alt="animated" width='200' />
 </p>
 
 ## Table of Contents
