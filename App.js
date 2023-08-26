@@ -7,6 +7,7 @@ import { store } from './store';
 import BasketScreen from './screens/BasketScreen';
 import PreparingScreen from './screens/PreparingScreen';
 import DeliveryScreen from './screens/DeliveryScreen';
+import { LogBox } from 'react-native'
 
 const Stack = createNativeStackNavigator()
 
