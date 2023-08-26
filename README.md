@@ -29,15 +29,13 @@ Clone the repository: `git clone https://github.com/SadafAsad/DeliveryApp.git`
 
 Navigate to the project directory: `cd WeatherApp`
 
-Install dependencies:
-
-```
-npm install
-```
+Install dependencies: `npm install`
 
 ## Usage
 
 ``` expo start ```
+
+Note: The library used for showing map is not compatibale with web. Simulate on a iOS device.
 
 ## Configuration
 
