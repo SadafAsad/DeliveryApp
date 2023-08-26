@@ -12,6 +12,8 @@ import { LogBox } from 'react-native'
 const Stack = createNativeStackNavigator()
 
 export default function App() {
+  LogBox.ignoreAllLogs()
+  
   return (
     <NavigationContainer>
       <Provider store={store}>
