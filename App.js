@@ -19,7 +19,9 @@ export default function App() {
           <Stack.Screen name="Basket" component={BasketScreen} 
             options={{presentation: 'modal', headerShown: false}}
           />
-          <Stack.Screen name="Preparing" component={PreparingScreen} />
+          <Stack.Screen name="Preparing" component={PreparingScreen}
+            options={{presentation: 'fullScreenModal', headerShown: false}}
+          />
         </Stack.Navigator>
       </Provider>
     </NavigationContainer>
