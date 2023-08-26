@@ -2,7 +2,10 @@
 
 Experience a whole new way of getting your favorite food – where tech and taste come together like never before!
 
-![](https://github.com/SadafAsad/DeliveryApp/blob/main/assets/DeliveryAppDemo.gif)
+<p align="center">
+  ![](https://github.com/SadafAsad/DeliveryApp/blob/main/assets/DeliveryAppDemo.gif)
+</p>
+
 
 ## Table of Contents
 
