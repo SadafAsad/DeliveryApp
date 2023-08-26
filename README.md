@@ -35,7 +35,7 @@ Install dependencies: `npm install`
 
 ``` expo start ```
 
-Note: The library used for showing map is not compatibale with web. Simulate on a iOS device.
+Note: Simulate on an iOS device. The library used for showing map is not compatibale with web.
 
 ## Configuration
 
