@@ -1,7 +1,7 @@
 # Delivery App
 
-<p align="center" style="display:flex">
-  <p>Experience a whole new way of getting your favorite food – where tech and taste come together like never before!</p>
+<p align="center" style="display: flex">
+  <div><p>Experience a whole new way of getting your favorite food – where tech and taste come together like never before!</p></div>
   <img src="assets/DeliveryAppDemo.gif" alt="animated" width='200' />
 </p>
 
