@@ -3,6 +3,7 @@
 Experience a whole new way of getting your favorite food – where tech and taste come together like never before!
 
 <p align="center">
+  <p>Experience a whole new way of getting your favorite food – where tech and taste come together like never before!</p>
   <img src="assets/DeliveryAppDemo.gif" alt="animated" width='200' />
 </p>
 
