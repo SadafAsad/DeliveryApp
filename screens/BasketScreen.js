@@ -3,7 +3,7 @@ import React, { useMemo, useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectRestaurant } from '../slices/restaurantSlice'
-import { removeFromBasket, selectBasketItems } from '../slices/basketSlice'
+import { removeFromBasket, selectBasketItems, selectBasketTotal } from '../slices/basketSlice'
 import { XCircleIcon } from 'react-native-heroicons/solid'
 import { urlFor } from '../sanity'
 
@@ -11,6 +11,7 @@ const BasketScreen = () => {
     const navigation = useNavigation()
     const restaurant = useSelector(selectRestaurant)
     const items = useSelector(selectBasketItems)
+    const basketTotal = useSelector(selectBasketTotal)
     const dispatch = useDispatch()
 
     const [groupedItemsInBasket, setGroupedItemsInBasket] = useState([])
@@ -72,6 +73,23 @@ const BasketScreen = () => {
                         </View>
                     ))}
                 </ScrollView>
+
+                <View className='p-5 bg-white mt-5 space-y-4'>
+                    <View className='flex-row justify-between'>
+                        <Text className='text-gray-400'>Subtotal</Text>
+                        <Text className='text-gray-400'>${basketTotal}</Text>
+                    </View>
+
+                    <View className='flex-row justify-between'>
+                        <Text className='text-gray-400'>Delivery Fee</Text>
+                        <Text className='text-gray-400'>$5.99</Text>
+                    </View>
+
+                    <View className='flex-row justify-between'>
+                        <Text>Order Total</Text>
+                        <Text className='font-extrabold'>${basketTotal + 5.99}</Text>
+                    </View>
+                </View>
             </View>
         </SafeAreaView>
     )
