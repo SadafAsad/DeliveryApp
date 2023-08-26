@@ -4,6 +4,10 @@ Experience a whole new way of getting your favorite food – where tech and tast
 
 ![](https://github.com/SadafAsad/DeliveryApp/blob/main/assets/DeliveryAppDemo.gif)
 
+<p align="center">
+  <img src="assets/DeliveryAppDemo.gif" alt="animated" />
+</p>
+
 ## Table of Contents
 
 - [Project Description](#project-description)
