@@ -30,7 +30,7 @@ Combined React Native, TailwindCSS, and Redux to create something truly special.
 
 Clone the repository: `git clone https://github.com/SadafAsad/DeliveryApp.git`
 
-Navigate to the project directory: `cd WeatherApp`
+Navigate to the project directory: `cd DeliveryApp`
 
 Install dependencies: `npm install`
 
